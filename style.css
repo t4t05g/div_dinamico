@@ -1,0 +1,60 @@
+* {
+    font-family: 'Domine', serif;
+    font-size: 16px;
+}
+
+blockquote:before { content: open-quote; }
+blockquote:after  { content: close-quote; }
+
+blockquote {
+    quotes: "\201C" "\201D";
+}
+
+body {
+  background-color: #fff;
+}
+
+.h1_main {
+    position: relative;
+    top: 40%;
+    font-size: 2em;
+}
+
+.h1_oscuros {
+    color: white;
+}
+
+.h1_amarillo {
+    color: black;
+}
+
+.capa1 {
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.capa2 {
+    height: 100vh;
+    background-color: yellow;
+    text-align: center;
+}
+
+.capa3 {
+    height: 100vh;
+    background-color: darkcyan;
+    text-align: center;
+}
+
+.capa4 {
+    height: 100vh;
+    background-color: darkred;
+    text-align: center;
+}
+
+.capa1 .capa2 .capa3 .capa4 .moviendo {
+  animation-duration: 2s;
+  animation-name: moviendo;
+  animation-direction:;
+}
