@@ -1,6 +1,6 @@
 * {
     font-family: 'Domine', serif;
-    font-size: 16p;
+    font-size: 16px;
 }
 
 blockquote:before { content: open-quote; }
@@ -75,4 +75,10 @@ blockquote {
   .divAparece.active{
     transform: translateY(0);
     opacity: 1;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .h1_main {
+      font-size: 2em;
+    }
   }
