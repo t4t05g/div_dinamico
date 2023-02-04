@@ -1,6 +1,6 @@
 * {
     font-family: 'Domine', serif;
-    font-size: 16px;
+    font-size: 16p;
 }
 
 blockquote:before { content: open-quote; }
@@ -10,14 +10,10 @@ blockquote {
     quotes: "\201C" "\201D";
 }
 
-body {
-  background-color: #fff;
-}
-
 .h1_main {
     position: relative;
     top: 40%;
-    font-size: 2em;
+    font-size: 5em;
 }
 
 .h1_oscuros {
@@ -28,11 +24,19 @@ body {
     color: black;
 }
 
+.section_background1 {
+    background-color: black;
+}
+
 .capa1 {
     height: 100vh;
     background-color: black;
     text-align: center;
     
+}
+
+.section_background2 {
+    background-color: black;
 }
 
 .capa2 {
@@ -41,10 +45,18 @@ body {
     text-align: center;
 }
 
+.section_background3 {
+    background-color: yellow;
+}
+
 .capa3 {
     height: 100vh;
     background-color: darkcyan;
     text-align: center;
+}
+
+.section_background4 {
+    background-color: darkcyan;
 }
 
 .capa4 {
@@ -53,8 +65,14 @@ body {
     text-align: center;
 }
 
-.capa1 .capa2 .capa3 .capa4 .moviendo {
-  animation-duration: 2s;
-  animation-name: moviendo;
-  animation-direction:;
-}
+.divAparece{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .divAparece.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

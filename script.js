@@ -1,13 +1,17 @@
-window.addEventListener('scroll', aparece_div() );
-
-var margenTop1 = 25;
-var margenTop2 = 25;
-var margenTop3 = 25;
-var margenTop4 = 25;
-
-
-function aparece_div() {
+function divAparece() {
+    var visible = document.querySelectorAll(".divAparece");
   
-    divCapa = document.getElementById("div2");
-    divCapa.style.marginTop = margenTop + "%";
-}
+    for (var i = 0; i < visible.length; i++) {
+      var altoVentana = window.innerHeight;
+      var bordeTop = visible[i].getBoundingClientRect().top;
+      var elementoVisible = 150;
+  
+      if (bordeTop < altoVentana - elementoVisible) {
+        visible[i].classList.add("active");
+      } else {
+        visible[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", divAparece);
