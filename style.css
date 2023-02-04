@@ -81,6 +81,10 @@ blockquote {
     opacity: 1;
 }
 
+.h1ApareceI {
+    animation: mueveIzquierda 1s;
+}
+
 @keyframes mueveIzquierda {
     0% {
         transform: translateX(350px);
@@ -90,10 +94,6 @@ blockquote {
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-.h1ApareceI {
-    animation: mueveIzquierda 1s;
 }
 
 /* //////////////////////////////////////////////////////// [ AJUSTE RESPONSIVO //////////////////////////////////////////////////////// */
