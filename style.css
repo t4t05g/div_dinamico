@@ -92,23 +92,8 @@ blockquote {
     }
 }
 
-@keyframes mueveDerecha {
-    0% {
-        transform: translateX(-350px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .h1ApareceI {
     animation: mueveIzquierda 1s;
-}
-
-.h1ApareceD {
-    animation: mueveDerecha 1s;
 }
 
 /* //////////////////////////////////////////////////////// [ AJUSTE RESPONSIVO //////////////////////////////////////////////////////// */
